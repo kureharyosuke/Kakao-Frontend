@@ -6,19 +6,43 @@
     <title>Welcome to KAKAO Talk</title>
   </head>
   <body>
-    <div id="status-bar">
+    <div class="status-bar">
       <div class="status-bar__column">
         <span>No Service</span>
-        <!-- To Do: Wifi Icon -->
+        <i class="fas fa-wifi"></i>
       </div>
       <div class="status-bar__column">
         <span>18:43</span>
       </div>
       <div class="status-bar__column">
         <span>11%</span>
-        <!-- Battery Icon -->
-        <!-- Lightning Icon -->
+        <i class="fas fa-battery-three-quarters"></i>
+        <i class="fas fa-bolt"></i>
       </div>
     </div>
+
+    <header class="welcome-header">
+      <h1 class="welcome-header__title">Welcome To KAKAO TALK</h1>
+      <p class="welcome-header__text">
+        If you have KAKAO Account, log in with your email or phone number.
+      </p>
+    </header>
+
+    <form id="login-form">
+      <input type="text" placeholder="Email or Phone Number" required />
+      <input type="password" placeholder="Password" required />
+      <input type="submit" value="Log In" />
+      <input
+        type="button"
+        value="Sing up"
+        onClick="location.href='signUp.html'"
+      />
+      <a href="#">Find KAKAO Account or Password</a>
+    </form>
+
+    <script
+      src="https://kit.fontawesome.com/1cdf5c3593.js"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
